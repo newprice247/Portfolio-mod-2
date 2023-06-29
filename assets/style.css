@@ -1,11 +1,47 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 };
+
+header {
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header h1{
+    padding: .59em;
+    padding-left: 100px;
+    background-color: blue;
+    position: absolute;
+
+}
 
 nav {
-
-};
-
-main {
+    background-color: yellow;
     display: flex;
-};
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+    font-size: 1.4em;
+    background-color: red;
+    padding: 1.1em;
+    padding-left: 40px;
+
+}
+
+nav a {
+    text-decoration: none;
+    
+
+}
+
+nav ul {
+    display: flex;
+}
+
