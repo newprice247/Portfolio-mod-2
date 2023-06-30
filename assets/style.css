@@ -6,7 +6,7 @@
 
 header {
     display: flex;
-    background-color: red;
+    background-color: darkgrey;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -14,13 +14,12 @@ header {
 header h1{
     padding: .59em;
     padding-left: 100px;
-    background-color: blue;
+    background-color: grey;
     position: absolute;
 
 }
 
 nav {
-    background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -29,19 +28,54 @@ nav {
 li {
     list-style: none;
     font-size: 1.4em;
-    background-color: red;
+    background-color: rgb(195, 195, 195);
     padding: 1.1em;
     padding-left: 40px;
+}
 
+li:hover {
+    background-color: darkgray;
+    
 }
 
 nav a {
     text-decoration: none;
+    color: black;
     
 
 }
 
 nav ul {
     display: flex;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+    header h1 {
+        width: 100%;
+        text-align: center;
+        padding: .59em;
+        position: static;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100
+    }
+
+    li {
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
 }
 
