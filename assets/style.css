@@ -115,6 +115,11 @@ article p {
     margin: 30px;
 }
 
+.project img{
+    height: 400px;
+    width: 600px;
+}
+
 
 
 /* Media Queries */
