@@ -2,11 +2,13 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 };
+
 
 header {
     display: flex;
-    background-color: darkgrey;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -14,10 +16,10 @@ header {
 header h1{
     padding: .51em;
     padding-left: 100px;
-    background-color: grey;
+    background-color: #ffaa00;
     position: fixed;
     top: 0;
-    box-shadow: 10px 0px 60px 8px black;
+    box-shadow: 10px 0px 60px 8px rgb(0, 0, 0);
     border-radius: 3px;
     z-index: 2;
 
@@ -28,7 +30,7 @@ nav {
     align-items: center;
     justify-content: flex-end;
     box-shadow: 0 10px 30px black;
-    background-color: lightblue;
+    background-color: rgb(16, 54, 67);
     position: fixed;
     top: 0;
     width: 100%;
@@ -42,29 +44,69 @@ nav ul {
 li {
     list-style: none;
     font-size: 1.4em;
-    background-color: lightblue;
+    background-color: rgb(16, 54, 67);
     padding: 1em;
     margin: 0px 10px;
     border-radius: 5px;
 }
 
 li:hover {
-    background-color: darkgray;
-    box-shadow: 0px 10px 20px black;
-    
+    background-color: #ffaa00;
+    box-shadow: 0px 10px 20px black; 
+}
+
+a:hover {
+    color: black;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    margin-top: 7em;
+}
+
+body {
+    background-image: url("./images/pexels-rovenimagescom-949587.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    color: white;
+}
+
+article p {
+    color: white;
+    background-color: rgba(0,0,0,.70);
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#about img {
+    width: 50%;
+    margin: 30px;
 }
 
 
-figure img {
-    max-width: 100%;
-    position: fixed;
-    z-index: 0;
-}
 
 /* Media Queries */
 
@@ -88,9 +130,6 @@ figure img {
         width: 100
     }
 
-    li {
-        
-    }
 }
 
 @media screen and (max-width: 480px) {
