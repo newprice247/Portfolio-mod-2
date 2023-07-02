@@ -6,6 +6,7 @@
     font-family: 'Ubuntu', sans-serif;
 };
 
+/* Begin Navbar styling */
 
 header {
     display: flex;
@@ -17,11 +18,8 @@ header h1{
     padding: .51em;
     padding-left: 100px;
     background-color: #ffaa00;
-    position: fixed;
-    top: 0;
     box-shadow: 10px 0px 60px 8px rgb(0, 0, 0);
     border-radius: 3px;
-    z-index: 2;
 
 }
 
@@ -31,10 +29,6 @@ nav {
     justify-content: flex-end;
     box-shadow: 0 10px 30px black;
     background-color: rgb(16, 54, 67);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
 }
 
 
@@ -61,13 +55,7 @@ main {
     margin-top: 7em;
 }
 
-body {
-    background-image: url("./images/pexels-rovenimagescom-949587.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* End of Navbar styling */
 
 /* Beginning of About section styling */
 
@@ -77,16 +65,15 @@ body {
 
 .section h2 {
     font-size: 3em;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 article p {
-    color: white;
-    background-color: rgba(0,0,0,.70);
+    color: rgb(0, 0, 0);
     margin: 50px;
     padding: 20px;
-    border-radius: 10px;
     float: right;
+    border-left: solid darkblue;
 }
 
 .section-header {
@@ -97,6 +84,7 @@ article p {
 #about img {
     width: 100%;
     margin: 30px;
+    border-radius: 5px;
 }
 
 
