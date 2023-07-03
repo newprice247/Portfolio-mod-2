@@ -4,6 +4,7 @@
     margin: 0;
     font-family: 'Sofia Sans', sans-serif;
     font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
 };
 
 :root {
@@ -82,13 +83,8 @@ nav a:hover {
 
 /* Beginning of About section styling */
 
-#about {
-    display: flex;
-}
-
-.section h2 {
-    font-size: 3em;
-    color: rgb(0, 0, 139);
+.portfolio-section {
+  display: flex;
 }
 
 .section-content{
@@ -104,11 +100,17 @@ nav a:hover {
 .section-header {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin: 20px;
     width: 30%;
 }
+
+.section-header h2 {
+  font-size: 3em;
+  color: rgb(0, 0, 139);
+}
+
 #about img {
     width: 100%;
     margin: 30px;
@@ -116,10 +118,6 @@ nav a:hover {
 }
 
 /* Start work section */
-
-#work {
-  display: flex;
-}
 
 #project-section {
   display: flex;
@@ -131,7 +129,6 @@ nav a:hover {
 
 .project {
   height: 31vh;
-  background-color: yellow;
   background-repeat: no-repeat;
   background-size: cover;
   width: 45%;
@@ -143,22 +140,30 @@ nav a:hover {
   color: white;
   border: solid darkblue 5px;
   padding-bottom: 1em;
+  opacity: .7;
+}
+
+.project:hover {
+  opacity: 1;
+  transition: .4s;
 }
 
 .project-description {
-  background-color: rgba(0,0,139, 70%);
+  background-color: rgb(0,0,139);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 1em;
+  opacity: 1;
 
 }
 
 .main-project {
   height: 40vh;
   width: 100%;
-  background-image: url(./images/digital-marketing-meeting.jpg);
+  background-image: 
+  url(./images/digital-marketing-meeting.jpg);
 
 }
 
@@ -176,6 +181,24 @@ nav a:hover {
 
 #run-buddy {
   background-image: url(./images/pexels-daria-obymaha-1684149.jpg);
+}
+
+/* Start of contact section */
+
+#contact-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact-section a {
+  padding: .6em;
+  border-radius: .2em;
+}
+
+#contact-section a:hover {
+  background-color: darkblue;
+  color: white;
+  transition: .4s;
 }
 /* Media Queries */
 
