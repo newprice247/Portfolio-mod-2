@@ -100,7 +100,7 @@ nav a:hover {
   display: flex;
   padding: 20px;
   margin: 3rem;
-  width: 70vw;
+  width: 70%;
   border-left: solid darkblue;
   align-items: center;
 }
@@ -108,8 +108,10 @@ nav a:hover {
 .section-header {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin: 20px;
-    width: 30vw;
+    width: 30%;
 }
 #about img {
     width: 100%;
@@ -123,10 +125,24 @@ nav a:hover {
   display: flex;
 }
 
+#project-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-#project-section a {
-  height: 30vh;
+.project {
+  height: 21vh;
   background-color: yellow;
+  width: 45%;
+  margin-bottom: 2em;
+}
+
+.main-project {
+  height: 26vh;
+  width: 100%;
+
 }
 
 /* Media Queries */
@@ -134,7 +150,7 @@ nav a:hover {
 @media screen and (max-width: 600px) {
   
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 885px) {
   nav {
     flex-wrap: wrap;
     flex-direction: column;
@@ -170,10 +186,13 @@ nav a:hover {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .section h2 {
     width: 100%;
+    text-align: center;
+
   }
   #about img {
     height: 40vh;
@@ -191,6 +210,18 @@ nav a:hover {
   .section {
     border-bottom: solid darkblue;
     margin: 3em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project {
+    width: 100%;
   }
 
 }
