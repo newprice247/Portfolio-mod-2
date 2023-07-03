@@ -59,7 +59,7 @@ nav a:hover {
 /* Hero card  */
 
 #hero {
-  height: 50vh;
+  height: 35vh;
   background-image: url(./images/pexels-rovenimagescom-949587.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,10 +68,6 @@ nav a:hover {
   align-items: flex-end;
 }
 
-
-#hero img {
-  height: 30vh;
-}
 
 #hero p {
   font-size: 2em;
@@ -92,7 +88,7 @@ nav a:hover {
 
 .section h2 {
     font-size: 3em;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 139);
 }
 
 .section-content{
@@ -132,19 +128,55 @@ nav a:hover {
   justify-content: space-between;
 }
 
+
 .project {
-  height: 21vh;
+  height: 31vh;
   background-color: yellow;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 45%;
   margin-bottom: 2em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: white;
+  border: solid darkblue 5px;
+  padding-bottom: 1em;
+}
+
+.project-description {
+  background-color: rgba(0,0,139, 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1em;
+
 }
 
 .main-project {
-  height: 26vh;
+  height: 40vh;
   width: 100%;
+  background-image: url(./images/digital-marketing-meeting.jpg);
 
 }
 
+#led-wall {
+  background-image: url(./images/pexels-designecologist-1779487.jpg);
+}
+
+#calculator {
+  background-image: url(./images/pexels-andrew-neel-2312369.jpg);
+}
+
+#pastel-puzzle {
+  background-image: url(./images/pexels-rfstudio-3825569.jpg);
+}
+
+#run-buddy {
+  background-image: url(./images/pexels-daria-obymaha-1684149.jpg);
+}
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
@@ -222,6 +254,7 @@ nav a:hover {
 
   .project {
     width: 100%;
+    height: 40vh;
   }
 
 }
