@@ -95,18 +95,21 @@ nav a:hover {
     color: rgb(0, 0, 0);
 }
 
-article p {
-    color: rgb(0, 0, 0);
-    margin: 50px;
-    padding: 20px;
-    float: right;
-    border-left: solid darkblue;
+.section-content{
+  color: black;
+  display: flex;
+  padding: 20px;
+  margin: 3rem;
+  width: 70vw;
+  border-left: solid darkblue;
+  align-items: center;
 }
 
 .section-header {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    width: 30vw;
 }
 #about img {
     width: 100%;
@@ -114,6 +117,17 @@ article p {
     border-radius: 5px;
 }
 
+/* Start work section */
+
+#work {
+  display: flex;
+}
+
+
+#project-section a {
+  height: 30vh;
+  background-color: yellow;
+}
 
 /* Media Queries */
 
@@ -166,12 +180,19 @@ article p {
     width: auto;
   }
 
-  article p {
-    margin: 0 1em;
+  .section-content {
+    margin: 1em;
+    margin-bottom: 3em;
+    padding: 0 2em;
+    width: 100vw;
     border-left: none;
-    border-top: solid darkblue;
-    border-bottom: solid darkblue;
   }
+
+  .section {
+    border-bottom: solid darkblue;
+    margin: 3em;
+  }
+
 }
 @media screen and (min-width: 1200px) {
 
