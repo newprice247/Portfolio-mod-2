@@ -1,11 +1,13 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Sofia Sans', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-    text-decoration: none;
-};
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Sofia Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+
+;
 
 :root {
   --clr-primary: #6aeeb5;
@@ -20,7 +22,7 @@
 /* Begin Navbar styling */
 
 nav {
-  background-color: darkblue;
+  background-color: darkgrey;
   box-shadow: 0 0 10px black;
   padding: em;
   display: flex;
@@ -31,18 +33,18 @@ nav {
 
 nav h1 {
   margin-right: auto;
-  margin-left: 4
-  font-size: 2em;
-  background-color: black;
-  color: white;
-  padding: 1.2em;
-  padding-left: 6em;
+  margin-left: 4 font-size: 2em;
+  background-color: darkblue;
+  color: darkgrey;
+  padding: .2em;
+  padding-left: 5em;
+  font-size: 2.2em;
 
 }
 
 nav a {
   margin-right: 1em;
-  color: black;
+  color: darkblue;
   text-decoration: none;
   font-size: 1.3em;
   padding: 1em;
@@ -50,7 +52,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: white;
+  background-color: darkblue;
+  color: darkgrey;
   border-radius: 1em;
   transition: .3s;
 }
@@ -71,50 +74,51 @@ nav a:hover {
 
 
 #hero p {
-  font-size: 2em;
-  background-color: rgba(0,0,0, 70%);
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 70%);
   color: white;
   padding: .4em 2.5em;
   margin: 1em;
-  border-radius: .2em;
+  border-radius: .1em;
 }
 
-
-
-/* Beginning of About section styling */
+/* Code to set standard parameters for page layout */
 
 .portfolio-section {
   display: flex;
 }
 
-.section-content{
+.section-content {
   color: black;
   display: flex;
-  padding: 20px;
-  margin: 3rem;
+  padding: 50px;
+  margin: 1rem;
   width: 70%;
   border-left: solid darkblue;
   align-items: center;
 }
 
 .section-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 20px;
-    width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 30px;
+  width: 30%;
+  text-align: end;
 }
 
 .section-header h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   color: rgb(0, 0, 139);
 }
 
+/* Beginning of About section styling */
+
 #about img {
-    width: 100%;
-    margin: 30px;
-    border-radius: 5px;
+  width: 100%;
+  margin: 30px;
+  border-radius: 5px;
 }
 
 /* Start work section */
@@ -149,7 +153,7 @@ nav a:hover {
 }
 
 .project-description {
-  background-color: rgb(0,0,139);
+  background-color: rgb(0, 0, 139);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -162,8 +166,8 @@ nav a:hover {
 .main-project {
   height: 40vh;
   width: 100%;
-  background-image: 
-  url(./images/digital-marketing-meeting.jpg);
+  background-image:
+    url(./images/digital-marketing-meeting.jpg);
 
 }
 
@@ -193,6 +197,7 @@ nav a:hover {
 #contact-section a {
   padding: .6em;
   border-radius: .2em;
+  font-size: 1.2em;
 }
 
 #contact-section a:hover {
@@ -200,25 +205,24 @@ nav a:hover {
   color: white;
   transition: .4s;
 }
+
+
 /* Media Queries */
 
-@media screen and (max-width: 600px) {
-  
-}
 @media screen and (max-width: 885px) {
   nav {
     flex-wrap: wrap;
     flex-direction: column;
   }
-  
+
   nav h1 {
     margin: 0;
     padding: 1em;
     width: 100%;
     text-align: center;
-  
+
   }
-  
+
   nav a {
     margin: 0;
     font-size: 1.2em;
@@ -227,7 +231,7 @@ nav a:hover {
     width: 100%;
     text-align: center;
   }
-  
+
   nav a:hover {
     border-radius: 0;
   }
@@ -249,6 +253,7 @@ nav a:hover {
     text-align: center;
 
   }
+
   #about img {
     height: 40vh;
     width: auto;
@@ -262,7 +267,7 @@ nav a:hover {
     border-left: none;
   }
 
-  .section {
+  .portfolio-section {
     border-bottom: solid darkblue;
     margin: 3em;
     flex-direction: column;
@@ -280,8 +285,12 @@ nav a:hover {
     height: 40vh;
   }
 
-}
-@media screen and (min-width: 1200px) {
+  #contact-section {
+    flex-direction: column;
+    gap: 1em;
+  }
 
+  #contact-section a {
+    font-size: 1.3em;
+  }
 }
-
