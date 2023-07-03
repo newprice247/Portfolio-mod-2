@@ -56,9 +56,32 @@ nav a:hover {
 
 /* End of Navbar styling */
 
+/* Hero card  */
+
+#hero {
+  height: 50vh;
+  background-image: url(./images/pexels-rovenimagescom-949587.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#hero p {
+  font-size: 2em;
+  background-color: rgba(0,0,0, 70%);
+  color: white;
+  padding: .4em 2.5em;
+  margin: 1em;
+  border-radius: .2em;
+}
+
+
+
 /* Beginning of About section styling */
 
-/* #about {
+#about {
     display: flex;
 }
 
@@ -80,12 +103,12 @@ article p {
     flex-wrap: wrap;
     margin: 20px;
 }
-#about img {
+/* #about img {
     width: 100%;
     margin: 30px;
     border-radius: 5px;
-}
- */
+} */
+
 
 /* Media Queries */
 
