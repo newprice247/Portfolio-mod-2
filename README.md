@@ -1,6 +1,6 @@
 
 
-# Advanced CSS: Portfolio: Module 1 Challenge
+# Advanced CSS: Portfolio: Module 2 Challenge
 
 ## Description
 
