@@ -7,18 +7,6 @@
   text-decoration: none;
 }
 
-;
-
-:root {
-  --clr-primary: #6aeeb5;
-  --clr-primary-hover: #29e6a7;
-  --clr-gray100: #f0f7f8;
-  --clr-gray200: #cfd8dc;
-  --radius: 0.2rem;
-}
-
-
-
 /* Begin Navbar styling */
 
 nav {
@@ -28,7 +16,6 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 nav h1 {
@@ -39,7 +26,6 @@ nav h1 {
   padding: .2em;
   padding-left: 5em;
   font-size: 2.2em;
-
 }
 
 nav a {
@@ -50,6 +36,8 @@ nav a {
   padding: 1em;
   border-radius: 1em;
 }
+
+/* Sets the behavior of the navbar buttons when cursor is hovering over them */
 
 nav a:hover {
   background-color: darkblue;
@@ -82,7 +70,7 @@ nav a:hover {
   border-radius: .1em;
 }
 
-/* Code to set standard parameters for page layout */
+/* Code to set standard parameters for overall page layout */
 
 .portfolio-section {
   display: flex;
@@ -121,7 +109,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/* Start work section */
+/* Start of Work section */
 
 #project-section {
   display: flex;
@@ -160,7 +148,6 @@ nav a:hover {
   justify-content: flex-end;
   padding: 1em;
   opacity: 1;
-
 }
 
 .main-project {
@@ -168,7 +155,6 @@ nav a:hover {
   width: 100%;
   background-image:
     url(./images/digital-marketing-meeting.jpg);
-
 }
 
 #led-wall {
