@@ -25,7 +25,7 @@ The goal of this project was to build a portfolio page from scratch using HTML a
 
 ## Credits
 
-The four placeholder images as well as the image for the hero banner were all sourced from ![Pexels.com](https://www.pexels.com/), a website hosting free stock images.
+The four placeholder images as well as the image for the hero banner were all sourced from [Pexels.com](https://www.pexels.com/), a website hosting free stock images.
 
 ## Contact Me
 
