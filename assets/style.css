@@ -8,7 +8,6 @@
 }
 
 /* Begin Navbar styling */
-
 nav {
   background-color: darkgrey;
   box-shadow: 0 0 10px black;
@@ -37,19 +36,16 @@ nav a {
   border-radius: 1em;
 }
 
-/* Sets the behavior of the navbar buttons when cursor is hovering over them */
-
+    /* Sets the behavior of the navbar buttons when cursor is hovering over them */
 nav a:hover {
   background-color: darkblue;
   color: darkgrey;
   border-radius: 1em;
   transition: .3s;
 }
-
 /* End of Navbar styling */
 
-/* Hero card  */
-
+/* Hero banner */
 #hero {
   height: 35vh;
   background-image: url(./images/pexels-rovenimagescom-949587.jpg);
@@ -60,7 +56,6 @@ nav a:hover {
   align-items: flex-end;
 }
 
-
 #hero p {
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 70%);
@@ -69,9 +64,9 @@ nav a:hover {
   margin: 1em;
   border-radius: .1em;
 }
+/* End hero banner styling */
 
-/* Code to set standard parameters for overall page layout */
-
+/* Styling for  overall page layout, including separating the page into two flexable columns*/
 .portfolio-section {
   display: flex;
 }
@@ -100,24 +95,23 @@ nav a:hover {
   font-size: 2.5em;
   color: rgb(0, 0, 139);
 }
+/* End overall page styling */
 
 /* Beginning of About section styling */
-
 #about img {
   width: 100%;
   margin: 30px;
   border-radius: 5px;
 }
+/* End About Me section */
 
 /* Start of Work section */
-
 #project-section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
-
 
 .project {
   height: 31vh;
@@ -172,9 +166,9 @@ nav a:hover {
 #run-buddy {
   background-image: url(./images/pexels-daria-obymaha-1684149.jpg);
 }
+/* End Work section */
 
-/* Start of contact section */
-
+/* Start of Contact Me section */
 #contact-section {
   display: flex;
   justify-content: space-evenly;
@@ -191,10 +185,9 @@ nav a:hover {
   color: white;
   transition: .4s;
 }
-
+/* End Contact Me section */
 
 /* Media Queries */
-
 @media screen and (max-width: 885px) {
   nav {
     flex-wrap: wrap;
