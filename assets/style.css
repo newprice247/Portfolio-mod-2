@@ -178,6 +178,7 @@ nav a:hover {
   padding: .6em;
   border-radius: .2em;
   font-size: 1.2em;
+  text-align: center;
 }
 
 #contact-section a:hover {
