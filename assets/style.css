@@ -52,12 +52,13 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: flex-end;
+  gap: 20em;
 }
 
 #hero img {
-  width: 30%;
+  width: 20%;
   margin: 30px;
   border-radius: 5px;
 }
@@ -102,10 +103,6 @@ nav a:hover {
   color: rgb(90,90,90);
 }
 /* End overall page styling */
-
-/* Beginning of About section styling */
-
-/* End About Me section */
 
 /* Start of Work section */
 #project-section {
@@ -222,15 +219,11 @@ nav a:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-
-  #hero figure {
-    display: flex;
-    justify-content: center;
+    gap: 1em;
   }
 
   #hero img {
-    width: 40%;
+    width: 50%;
   }
 
   #hero p {
