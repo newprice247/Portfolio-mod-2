@@ -47,13 +47,19 @@ nav a:hover {
 
 /* Hero banner */
 #hero {
-  height: 35vh;
+  height: 33%;
   background-image: url(./images/pexels-rovenimagescom-949587.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+#hero img {
+  width: 30%;
+  margin: 30px;
+  border-radius: 5px;
 }
 
 #hero p {
@@ -98,11 +104,7 @@ nav a:hover {
 /* End overall page styling */
 
 /* Beginning of About section styling */
-#about img {
-  width: 100%;
-  margin: 30px;
-  border-radius: 5px;
-}
+
 /* End About Me section */
 
 /* Start of Work section */
@@ -216,8 +218,23 @@ nav a:hover {
     border-radius: 0;
   }
 
+  #hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #hero figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  #hero img {
+    width: 40%;
+  }
+
   #hero p {
-    font-size: .9em;
+    font-size: 1em;
   }
 
   #about {
